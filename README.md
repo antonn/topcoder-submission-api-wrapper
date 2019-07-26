@@ -81,11 +81,6 @@ E.g.
 const reviewTypeId = '8f4e8b6a-0ad2-4ff6-ab19-afeb102ff3b4'
 const userJwtToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM'
 
-submissionApiClient
-  .createReviewType({ name: 'test-for-create', isActive: true }, userJwtToken)
-  .then(result => console.log(result.body, result.status))
-  .catch(err => console.log(err))
-
 await submissionApiClient.deleteReviewType(reviewTypeId, userJwtToken)
 
 const result = await submissionApiClient.searchReviews({ page: 2, perPage: 30 }, userJwtToken)
