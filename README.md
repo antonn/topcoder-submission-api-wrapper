@@ -14,7 +14,7 @@ Include the wrapper in package.json as follows
 
 #### 1. Using M2M Authentication
 
-    Create an instance of this wrapper with m2m configuration variables listed below
+Create an instance of this wrapper with m2m configuration variables listed below
 
     ```javascript
     const submissionApi = require('topcoder-submission-api-wrapper')
