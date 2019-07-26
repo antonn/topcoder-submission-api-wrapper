@@ -48,7 +48,8 @@ await submissionApiClient.searchReviews(reqQuery)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqQuery** | [**SearchReviewsCriteria**](SearchReviewsCriteria.md)| the search reviews criteria
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 Array of [**Review**](Review.md)
@@ -97,7 +98,8 @@ await submissionApiClient.headReviews(reqQuery)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqQuery** | [**SearchReviewsCriteria**](SearchReviewsCriteria.md)| the search reviews criteria
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
@@ -149,7 +151,8 @@ await submissionApiClient.createReview(reqBody)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqBody** | [**ReviewData**](ReviewData.md)| the review data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**Review**](Review.md)
@@ -193,7 +196,8 @@ await submissionApiClient.getReview(reviewId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reviewId** | String | the review id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**Review**](Review.md)
@@ -238,7 +242,8 @@ await submissionApiClient.headReview(reviewId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reviewId** | String | the review id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
@@ -292,7 +297,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **reviewId** | String | the review id
  **reqBody** | [**ReviewData**](ReviewData.md)| the review data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**Review**](Review.md)
@@ -344,7 +350,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **reviewId** | String | the review id
  **reqBody** | [**ReviewData**](ReviewData.md)| the review data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**Review**](Review.md)
@@ -389,7 +396,8 @@ await submissionApiClient.deleteReview(reviewId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reviewId** | String | the review id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
