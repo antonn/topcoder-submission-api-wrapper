@@ -6,9 +6,10 @@ Wrapper library for Topcoder Submission API
 
 Include the wrapper in package.json as follows
 
-    ```bash
+```bash
     "topcoder-submission-api-wrapper": "topcoder-platform/topcoder-submission-api-wrapper.git"
-    ```
+```
+
 ### There are three different ways the caller authenticate
 
 1. Create an instance of this wrapper with m2m configuration variables listed below
