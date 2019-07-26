@@ -52,7 +52,8 @@ await submissionApiClient.searchSubmissions(reqQuery)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqQuery** | [**SearchSubmissionsCriteria**](SearchSubmissionsCriteria.md)| the search submissions criteria
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 Array of [**Submission**](Submission.md)
@@ -101,7 +102,8 @@ await submissionApiClient.headSubmissions(reqQuery)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqQuery** | [**SearchSubmissionsCriteria**](SearchSubmissionsCriteria.md)| the search submissions criteria
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
@@ -206,7 +208,8 @@ app.listen(app.get('port'), () => {
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqFormData** | [**SubmissionData**](SubmissionData.md)| the submission data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**Submission**](Submission.md)
@@ -250,7 +253,8 @@ await submissionApiClient.getSubmission(submissionId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **submissionId** | String | the submission id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**Submission**](Submission.md)
@@ -295,7 +299,8 @@ await submissionApiClient.headSubmission(submissionId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **submissionId** | String | the submission id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
@@ -347,7 +352,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **submissionId** | String | the submission id
  **reqBody** | [**SubmissionUpdataData**](SubmissionUpdataData.md)| the submission data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**Submission**](Submission.md)
@@ -397,7 +403,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **submissionId** | String | the submission id
  **reqBody** | [**SubmissionUpdataData**](SubmissionUpdataData.md)| the submission data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**Submission**](Submission.md)
@@ -442,7 +449,8 @@ await submissionApiClient.deleteSubmission(submissionId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **submissionId** | String | the submission id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
@@ -526,7 +534,8 @@ app.listen(app.get('port'), () => {
 Name | Type | Description
 ------------- | ------------- | -------------
  **submissionId** | String | the submission id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 Binary data
@@ -624,7 +633,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **submissionId** | String | the submission id
  **reqFormData** | [**ArtifactData**](ArtifactData.md)| the artifact
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**Artifact**](Artifact.md)
@@ -669,7 +679,8 @@ await submissionApiClient.listArtifacts(submissionId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **submissionId** | String | the submission id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**ListArtifactsData**](ListArtifactsData.md)
@@ -755,7 +766,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **submissionId** | String | the submission id
  **artifactId** | String | the artifact id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 Binary data
