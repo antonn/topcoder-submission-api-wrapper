@@ -62,14 +62,11 @@ Create an instance of this wrapper with user auth configuration variables listed
 
 ### 3. Passing User's token in methods
     
-Create an instance of this wrapper with m2m configuration variables listed below
+Create an instance of this wrapper
 
 ```javascript
     const submissionApi = require('topcoder-submission-api-wrapper')
-    const submissionApiClient = submissionApi(_.pick(config,
-          ['AUTH0_URL', 'AUTH0_AUDIENCE', 'TOKEN_CACHE_TIME',
-            'AUTH0_CLIENT_ID', 'AUTH0_CLIENT_SECRET', 'SUBMISSION_API_URL',
-            'AUTH0_PROXY_SERVER_URL']))
+    const submissionApiClient = submissionApi()
 ```
 
    Configuration / Environment variables:
