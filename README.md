@@ -53,15 +53,12 @@ Create an instance of this wrapper with user auth configuration variables listed
 
     - USERNAME - the auth0 url
     - PASSWORD - the auth0 audience
-    - SUBMISSION_API_URL - (optional) the token cache time
-    - AUTH0_CLIENT_ID - the auth0 client id, used as credential
-    - AUTH0_CLIENT_SECRET - the auth0 client secret, used as credential
-    - AUTH0_PROXY_SERVER_URL - (optional) the auth0 proxy server url
     - SUBMISSION_API_URL - Topcoder V5 Submission API URL. E.g. `https://api.topcoder-dev.com/v5`
-    - PAGE - the page number
-    - PER_PAGE - the page size
-    - MAX_PAGE_SIZE - the max number of page size
-
+    - TC_AUTHN_URL - the auth0 client id, used as credential
+    - TC_AUTHZ_URL - the auth0 client secret, used as credential
+    - TC_CLIENT_ID - the auth0 proxy server url
+    - TC_CLIENT_V2CONNECTION - 
+   
 
 ### 3. Passing User's token in methods
     
