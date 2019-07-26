@@ -14,17 +14,17 @@ There are three different ways the caller can authenticate
 
 #### Using M2M Authentication
     
-    Create an instance of this wrapper with m2m configuration variables listed below
+Create an instance of this wrapper with m2m configuration variables listed below
 
-    ```javascript
+```javascript
     const submissionApi = require('topcoder-submission-api-wrapper')
     const submissionApiClient = submissionApi(_.pick(config,
           ['AUTH0_URL', 'AUTH0_AUDIENCE', 'TOKEN_CACHE_TIME',
             'AUTH0_CLIENT_ID', 'AUTH0_CLIENT_SECRET', 'SUBMISSION_API_URL',
             'AUTH0_PROXY_SERVER_URL']))
-    ```
+```
 
-    **Configuration / Environment variables:**
+   **Configuration / Environment variables:**
 
     - AUTH0_URL - the auth0 url
     - AUTH0_AUDIENCE - the auth0 audience
