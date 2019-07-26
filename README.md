@@ -37,6 +37,58 @@ Create an instance of this wrapper with m2m configuration variables listed below
     - PER_PAGE - the page size
     - MAX_PAGE_SIZE - the max number of page size
 
+#### Using User Basic Authentication
+    
+Create an instance of this wrapper with m2m configuration variables listed below
+
+```javascript
+    const submissionApi = require('topcoder-submission-api-wrapper')
+    const submissionApiClient = submissionApi(_.pick(config,
+          ['AUTH0_URL', 'AUTH0_AUDIENCE', 'TOKEN_CACHE_TIME',
+            'AUTH0_CLIENT_ID', 'AUTH0_CLIENT_SECRET', 'SUBMISSION_API_URL',
+            'AUTH0_PROXY_SERVER_URL']))
+```
+
+   **Configuration / Environment variables:**
+
+    - AUTH0_URL - the auth0 url
+    - AUTH0_AUDIENCE - the auth0 audience
+    - TOKEN_CACHE_TIME - (optional) the token cache time
+    - AUTH0_CLIENT_ID - the auth0 client id, used as credential
+    - AUTH0_CLIENT_SECRET - the auth0 client secret, used as credential
+    - AUTH0_PROXY_SERVER_URL - (optional) the auth0 proxy server url
+    - SUBMISSION_API_URL - Topcoder V5 Submission API URL. E.g. `https://api.topcoder-dev.com/v5`
+    - PAGE - the page number
+    - PER_PAGE - the page size
+    - MAX_PAGE_SIZE - the max number of page size
+
+
+#### Using M2M Authentication
+    
+Create an instance of this wrapper with m2m configuration variables listed below
+
+```javascript
+    const submissionApi = require('topcoder-submission-api-wrapper')
+    const submissionApiClient = submissionApi(_.pick(config,
+          ['AUTH0_URL', 'AUTH0_AUDIENCE', 'TOKEN_CACHE_TIME',
+            'AUTH0_CLIENT_ID', 'AUTH0_CLIENT_SECRET', 'SUBMISSION_API_URL',
+            'AUTH0_PROXY_SERVER_URL']))
+```
+
+   **Configuration / Environment variables:**
+
+    - AUTH0_URL - the auth0 url
+    - AUTH0_AUDIENCE - the auth0 audience
+    - TOKEN_CACHE_TIME - (optional) the token cache time
+    - AUTH0_CLIENT_ID - the auth0 client id, used as credential
+    - AUTH0_CLIENT_SECRET - the auth0 client secret, used as credential
+    - AUTH0_PROXY_SERVER_URL - (optional) the auth0 proxy server url
+    - SUBMISSION_API_URL - Topcoder V5 Submission API URL. E.g. `https://api.topcoder-dev.com/v5`
+    - PAGE - the page number
+    - PER_PAGE - the page size
+    - MAX_PAGE_SIZE - the max number of page size
+
+
 
 Every function in this wrapper will return a promise, Handling promises is at the caller end. Call the functions with appropriate arguments
 
