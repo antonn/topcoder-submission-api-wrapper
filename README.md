@@ -9,8 +9,9 @@ Wrapper library for Topcoder Submission API
     ```bash
     "topcoder-submission-api-wrapper": "topcoder-platform/topcoder-submission-api-wrapper.git"
     ```
+### There are three different ways the caller authenticate
 
-2. Create an instance of this wrapper with the configuration variables listed below
+1. Create an instance of this wrapper with m2m configuration variables listed below
 
     ```javascript
     const submissionApi = require('topcoder-submission-api-wrapper')
@@ -33,7 +34,8 @@ Wrapper library for Topcoder Submission API
     - PER_PAGE - the page size
     - MAX_PAGE_SIZE - the max number of page size
 
-3. Every function in this wrapper will return a promise, Handling promises is at the caller end. Call the functions with appropriate arguments
+
+Every function in this wrapper will return a promise, Handling promises is at the caller end. Call the functions with appropriate arguments
 
 E.g.
 
