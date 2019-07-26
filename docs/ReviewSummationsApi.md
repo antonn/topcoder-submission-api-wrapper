@@ -51,7 +51,8 @@ await submissionApiClient.searchReviewSummations(reqQuery)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqQuery** | [**SearchReviewSummationsCriteria**](SearchReviewSummationsCriteria.md) | the search review summations criteria
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 Array of [**ReviewSummation**](ReviewSummation.md)
@@ -104,7 +105,8 @@ await submissionApiClient.headReviewSummations(reqQuery)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqQuery** | [**SearchReviewSummationsCriteria**](SearchReviewSummationsCriteria.md) | the search reviews criteria
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
@@ -156,7 +158,8 @@ await submissionApiClient.createReviewSummation(reqBody)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqBody** | [**ReviewSummationData**](ReviewSummationData.md) | the review summation data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**ReviewSummation**](ReviewSummation.md)
@@ -201,7 +204,8 @@ await submissionApiClient.getReviewSummation(reviewSummationId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reviewSummationId** | String | the review summation id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**ReviewSummation**](ReviewSummation.md)
@@ -247,7 +251,8 @@ await submissionApiClient.headReviewSummation(reviewId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reviewSummationId** | String | the review summation id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
@@ -301,7 +306,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **reviewSummationId** | String | the review summation id
  **reqBody** | [**ReviewSummationData**](ReviewSummationData.md) | the review summation data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**ReviewSummation**](ReviewSummation.md)
@@ -352,7 +358,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **reviewSummationId** | String | the review summation id
  **reqBody** | [**ReviewSummationData**](ReviewSummationData.md) | the review summation data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**ReviewSummation**](ReviewSummation.md)
@@ -398,6 +405,7 @@ await submissionApiClient.deleteReviewSummation(reviewSummationId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reviewSummationId** | String | the review summation id
+ **userJwtToken** | String | User Authorization Token (Optional)
 
 ### Return type
 
