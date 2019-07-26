@@ -24,7 +24,7 @@ Create an instance of this wrapper with m2m configuration variables listed below
             'AUTH0_PROXY_SERVER_URL']))
 ```
 
-   **Configuration / Environment variables:**
+   Configuration / Environment variables:
 
     - AUTH0_URL - the auth0 url
     - AUTH0_AUDIENCE - the auth0 audience
