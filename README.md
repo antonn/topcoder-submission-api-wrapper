@@ -10,7 +10,7 @@ Include the wrapper in package.json as follows
     "topcoder-submission-api-wrapper": "topcoder-platform/topcoder-submission-api-wrapper.git"
 ```
 
-There are three different ways the caller can authenticate
+There are three different ways the caller can authenticate. Caller is expected to use any one of them and should not mix.
 
 ### 1. Using M2M Authentication
     
