@@ -72,7 +72,24 @@ Create an instance of this wrapper with configuration variable listed below
    Configuration / Environment variables:
 
     - SUBMISSION_API_URL - Topcoder V5 Submission API URL. E.g. `https://api.topcoder-dev.com/v5`
-  
+
+Every function in this wrapper can accept `userJwtToken` as optional parameter.
+
+E.g.
+
+```bash
+const reviewTypeId = '8f4e8b6a-0ad2-4ff6-ab19-afeb102ff3b4'
+const userJwtToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM'
+
+submissionApiClient
+  .createReviewType({ name: 'test-for-create', isActive: true }, userJwtToken)
+  .then(result => console.log(result.body, result.status))
+  .catch(err => console.log(err))
+
+await submissionApiClient.deleteReviewType(reviewTypeId, userJwtToken)
+
+const result = await submissionApiClient.searchReviews({ page: 2, perPage: 30 }, userJwtToken)
+```
 
 Every function in this wrapper will return a promise, Handling promises is at the caller end. Call the functions with appropriate arguments
 
