@@ -100,7 +100,8 @@ await submissionApiClient.headReviewTypes(reqQuery)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqQuery** | [**Criteria**](Criteria.md)| the search criteria
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
@@ -148,7 +149,8 @@ await submissionApiClient.createReviewType(reqBody)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqBody** | [**ReviewTypeData**](ReviewTypeData.md)| the review type data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**ReviewType**](ReviewType.md)
@@ -192,7 +194,8 @@ await submissionApiClient.getReviewType(reviewTypeId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reviewTypeId** | String | the review type id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**ReviewType**](ReviewType.md)
@@ -237,7 +240,8 @@ await submissionApiClient.headReviewType(reviewTypeId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reviewTypeId** | String | the review type id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
@@ -287,7 +291,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **reviewTypeId** | String | the review type id
  **reqBody** | [**ReviewTypeData**](ReviewTypeData.md)| the review type data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**ReviewType**](ReviewType.md)
@@ -337,7 +342,8 @@ Name | Type | Description
 ------------- | ------------- | -------------
  **reviewTypeId** | String | the review type id
  **reqBody** | [**ReviewTypeData**](ReviewTypeData.md)| the review type data
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 [**ReviewType**](ReviewType.md)
@@ -382,7 +388,8 @@ await submissionApiClient.deleteReviewType(reviewTypeId)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reviewTypeId** | String | the review type id
-
+ **userJwtToken** | String | User Authorization Token (Optional)
+ 
 ### Return type
 
 null (empty response body)
