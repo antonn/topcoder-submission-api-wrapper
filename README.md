@@ -51,13 +51,13 @@ Create an instance of this wrapper with user auth configuration variables listed
 
    **Configuration / Environment variables:**
 
-    - USERNAME - the auth0 url
-    - PASSWORD - the auth0 audience
+    - USERNAME - the TC login username
+    - PASSWORD - the TC login password
     - SUBMISSION_API_URL - Topcoder V5 Submission API URL. E.g. `https://api.topcoder-dev.com/v5`
-    - TC_AUTHN_URL - the auth0 client id, used as credential
-    - TC_AUTHZ_URL - the auth0 client secret, used as credential
-    - TC_CLIENT_ID - the auth0 proxy server url
-    - TC_CLIENT_V2CONNECTION - 
+    - TC_AUTHN_URL - API that is used to fetch JWT token v2
+    - TC_AUTHZ_URL - API that is used to fetch JWT token v3
+    - TC_CLIENT_ID - TC client ID
+    - TC_CLIENT_V2CONNECTION - TC client connection protocol
    
 
 ### 3. Passing User's token in methods
