@@ -66,7 +66,7 @@ Create an instance of this wrapper
 
 ```javascript
     const submissionApi = require('topcoder-submission-api-wrapper')
-    const submissionApiClient = submissionApi()
+    const submissionApiClient = submissionApi(_.pick(config,['SUBMISSION_API_URL']))
 ```
 
    Configuration / Environment variables:
