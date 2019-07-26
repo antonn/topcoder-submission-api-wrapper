@@ -12,7 +12,7 @@ Include the wrapper in package.json as follows
 
 There are three different ways the caller can authenticate
 
-#### Using M2M Authentication
+#### 1. Using M2M Authentication
     
 Create an instance of this wrapper with m2m configuration variables listed below
 
@@ -37,7 +37,7 @@ Create an instance of this wrapper with m2m configuration variables listed below
     - PER_PAGE - the page size
     - MAX_PAGE_SIZE - the max number of page size
 
-#### Using User Basic Authentication
+#### 2. Using User's Basic Authentication
     
 Create an instance of this wrapper with m2m configuration variables listed below
 
@@ -63,7 +63,7 @@ Create an instance of this wrapper with m2m configuration variables listed below
     - MAX_PAGE_SIZE - the max number of page size
 
 
-#### Using M2M Authentication
+#### 3. Passing User's token in methods
     
 Create an instance of this wrapper with m2m configuration variables listed below
 
