@@ -10,7 +10,7 @@ Include the wrapper in package.json as follows
     "topcoder-submission-api-wrapper": "topcoder-platform/topcoder-submission-api-wrapper.git"
 ```
 
-There are three different ways the caller can authenticate. Caller is expected to use any one of them and should not mix.
+There are three different possible ways the caller can choose to authenticate while calling the wrapper. 
 
 ### 1. Using M2M Authentication
     
@@ -49,7 +49,7 @@ Create an instance of this wrapper with user auth configuration variables listed
             'TC_CLIENT_V2CONNECTION']))
 ```
 
-   **Configuration / Environment variables:**
+   Configuration / Environment variables:
 
     - USERNAME - the TC login username
     - PASSWORD - the TC login password
@@ -72,7 +72,7 @@ Create an instance of this wrapper with m2m configuration variables listed below
             'AUTH0_PROXY_SERVER_URL']))
 ```
 
-   **Configuration / Environment variables:**
+   Configuration / Environment variables:
 
     - AUTH0_URL - the auth0 url
     - AUTH0_AUDIENCE - the auth0 audience
