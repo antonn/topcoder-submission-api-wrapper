@@ -49,7 +49,7 @@ await submissionApiClient.searchReviewTypes(reqQuery)
 Name | Type | Description
 ------------- | ------------- | -------------
  **reqQuery** | [**Criteria**](Criteria.md)| the search criteria
- **userJwtToken** | JWT Token | Optional
+ **userJwtToken** | String | User Authorization Token (Optional)
  
 ### Return type
 
