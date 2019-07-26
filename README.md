@@ -4,7 +4,7 @@ Wrapper library for Topcoder Submission API
 
 ## How to use this Wrapper
 
-1. Include the wrapper in package.json as follows
+Include the wrapper in package.json as follows
 
     ```bash
     "topcoder-submission-api-wrapper": "topcoder-platform/topcoder-submission-api-wrapper.git"
