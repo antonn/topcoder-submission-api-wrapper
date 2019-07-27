@@ -8,7 +8,8 @@
 
 ## Test Coverage Report
 
-  226 passing (5m)
+  575 passing (3s)
+  2 pending
 
 File                                        |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s
 --------------------------------------------|----------|----------|----------|----------|-------------------
