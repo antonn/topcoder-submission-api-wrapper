@@ -187,7 +187,7 @@ Following environment variables need to be set up before running the tests
 - TEST_TC_CLIENT_V2CONNECTION
 ```
 
-Defaults value can also be updated in respective test config files `testAuthConfig.js`, `testM2MConfig.js` and `testParamConfig.js`
+Alternatively default values can also be updated in respective test config files `testAuthConfig.js`, `testM2MConfig.js` and `testParamConfig.js`
 
 Refer to Step # 2 in [this section](#how-to-use-this-wrapper) to learn more about the configuration variables.
 
