@@ -179,7 +179,15 @@ Following environment variables need to be set up before running the tests
 - TEST_AUTH0_CLIENT_ID
 - TEST_AUTH0_CLIENT_SECRET
 - TEST_SUBMISSION_API_URL
+- TEST_USERNAME
+- TEST_PASSWORD
+- TEST_TC_AUTHN_URL
+- TEST_TC_AUTHZ_URL
+- TEST_TC_CLIENT_ID
+- TEST_TC_CLIENT_V2CONNECTION
 ```
+
+Defaults value can also be updated in respective test config files `testAuthConfig.js`, `testM2MConfig.js` and `testParamConfig.js`
 
 Refer to Step # 2 in [this section](#how-to-use-this-wrapper) to learn more about the configuration variables.
 
